@@ -14,6 +14,16 @@ main {
   background-color: red;
 }
 
+.logo {
+  position: absolute;
+  margin: auto;
+  margin-top: -580px;
+  height: 10vh;
+  width: 15vw;
+  background-image: url("./twinder.png");
+  background-size: cover;
+}
+
 .questionContainer {
   height: 70%;
   width: 60%;
