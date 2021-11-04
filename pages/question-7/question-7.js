@@ -3,8 +3,9 @@ let outputSalary = document.getElementById("show-salary");
 let outputAge = document.getElementById("show-age");
 
 function setStyle(item, i) {
-  x = Math.round(slider.value / 400);
+  x = Math.round(slider.value / 275);
   // Shifts the primary color for each container.
+  console.log(x);
   hueIncrement = 60;
   // Offsets the secondary color of the gradient.
   gradientHueOffset = 100;
