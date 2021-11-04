@@ -1,0 +1,38 @@
+@font-face {
+    font-family: 'nighty_demoregular';
+    src: url('./fonts/nightydemo-webfont.woff2') format('woff2'),
+         url('./fonts/nightydemo-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+body{
+    width: auto;
+    height: 100vh;
+    background-image: linear-gradient(to right, #b8dde6 , #dbfa3c);
+}
+h1, form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-items: space-around;
+
+}
+label{
+    font-family: 'Amatic SC', cursive;
+    font-family: 'Lato', sans-serif;;
+}
+h1{
+    font-family: 'nighty_demoregular';
+    font-size: 7rem;
+}
+button{
+    font-size: 1.8em;
+    border-radius: 20px;
+    background-color: transparent;
+}
+
+input{
+    background-color: transparent;
+    font-size: 1.2em;
+}

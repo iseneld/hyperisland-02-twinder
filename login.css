@@ -1,0 +1,51 @@
+@font-face {
+  font-family: 'nighty_demoregular';
+  src: url("./fonts/nightydemo-webfont.woff2") format("woff2"), url("./fonts/nightydemo-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  width: auto;
+  height: 100vh;
+  background-image: -webkit-gradient(linear, left top, right top, from(#b8dde6), to(#dbfa3c));
+  background-image: linear-gradient(to right, #b8dde6, #dbfa3c);
+}
+
+h1, form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-align: space-around;
+      -ms-flex-align: space-around;
+          align-items: space-around;
+}
+
+label {
+  font-family: 'Amatic SC', cursive;
+  font-family: 'Lato', sans-serif;
+}
+
+h1 {
+  font-family: 'nighty_demoregular';
+  font-size: 7rem;
+}
+
+button {
+  font-size: 1.8em;
+  border-radius: 20px;
+  background-color: transparent;
+}
+
+input {
+  background-color: transparent;
+  font-size: 1.2em;
+}
+/*# sourceMappingURL=login.css.map */
