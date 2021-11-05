@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'nighty_demoregular';
-  src: url("./fonts/nightydemo-webfont.woff2") format("woff2"), url("./fonts/nightydemo-webfont.woff") format("woff");
+  src: url("./fonts/nightydemo-nrjop-webfont.woff") format("woff1"), url("./fonts/nightydemo-nrjop-webfont.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
 }

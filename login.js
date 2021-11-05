@@ -29,17 +29,17 @@ const firebaseConfig = {
  const auth = getAuth(app);
 
 
-document.getElementById("signup").addEventListener("click", () => { signUp() });
-document.getElementById("sign_out").addEventListener("click", () => { signOut(auth) });
-document.getElementById("sign_in").addEventListener("click", () => { signIn() });
-document.getElementById("sign_in_with_google").addEventListener("click", () => { signInWithGoogle(); });
 
 
 
 function getFormData() {
   const form = document.getElementById("app");
+  console.log(form)
   const formData = new FormData(form);
+  console.log(formData)
+  console.log(formData.get("pwd"))
   return { 'email': formData.get("email"), password: formData.get("pwd") }
+  
 }
 
 
@@ -57,6 +57,9 @@ async function signUp() {
 
 async function signIn() {
   let user = getFormData();
+  if(user.email && user.password){
+    loginSuccess()
+  }
   if (!user.email || !user.password) {
     return console.log("email & password required");
   }
@@ -97,7 +100,51 @@ onAuthStateChanged(auth, (user) => {
   });
 
 
+const loginPage = `
+<form id="app" onsubmit="event.preventDefault();">
+<label for="email">Enter your email:</label><br>
+<input type="email" id="email" name="email"><br><br>
+
+<label for="pwd">Password:</label><br>
+<input type="password" id="pwd" name="pwd"><br><br>
+
+<input type="submit" id="signup" name="signup" value="Sign up" /><br>
+<input type="submit" id="sign_in_with_google" name="sign_in_with_google" value="Sign In with Google" /><br>
+<input type="submit" id="sign_in"  name="sign_in" value="Sign In" /><br>
+
+</form>`
+
+
+const loggedIn = `
+<form id="app" onsubmit="event.preventDefault();">
+
+<input type="submit" id="sign_out" name="sign_out" value="Sign out" /><br><br><br>
+
+
+<button>Start the quiz!</button><br><br>
+</form>`
+
+
+
+function pageLoad(){
+  document.querySelector("section").innerHTML = loginPage;
+
+  
+  document.getElementById("signup").addEventListener("click", () => { signUp() });
+  // document.getElementById("sign_out").addEventListener("click", () => { signOut(auth) });
+  document.getElementById("sign_in").addEventListener("click", () => { signIn() });
+  document.getElementById("sign_in_with_google").addEventListener("click", () => { signInWithGoogle(); });
+
+ 
+}
 
 
 
 
+function loginSuccess(){
+  document.querySelector("section").innerHTML = loggedIn;
+
+  document.getElementById("sign_out").addEventListener("click", () => { signOut(auth); pageLoad() });
+
+}
+pageLoad()
