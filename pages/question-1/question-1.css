@@ -1,0 +1,183 @@
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  height: 98vh;
+  margin: auto;
+  background-color: #06D6A0;
+}
+
+.logo {
+  position: absolute;
+  margin: auto;
+  margin-top: -580px;
+  height: 10vh;
+  width: 15vw;
+  background-image: url("./twinder.png");
+  background-size: cover;
+}
+
+.questionContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 90%;
+  width: 60%;
+  text-align: center;
+  padding: 20px;
+}
+
+@media screen and (max-width: 1400px) {
+  .questionContainer {
+    width: 100%;
+  }
+}
+
+.truth {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 40%;
+  -webkit-transition: .5s;
+  transition: .5s;
+  cursor: pointer;
+  text-align: center;
+  color: #EF476F;
+}
+
+.truth--dare {
+  border-left: none;
+  color: #1c3cc9;
+  cursor: pointer;
+}
+
+.truth--or {
+  color: white;
+  height: 10%;
+  cursor: default;
+  pointer-events: none;
+}
+
+.truth--or h2 {
+  font-family: 'Lato', sans-serif;
+  font-size: 3em;
+  margin: 0;
+  text-shadow: 0 1px 0 #CCC, 0 2px 0 #CCC, 0 3px 0 #CCC, 0 4px 0 #CCC, 0 5px 0 #CCC, 0 6px 0 transparent, 0 7px 0 transparent, 0 8px 0 transparent, 0 9px 0 transparent, 0 10px 10px rgba(0, 0, 0, 0.4);
+}
+
+.truth--or h2:hover {
+  color: white;
+  -webkit-transition: 0s;
+  transition: 0s;
+}
+
+.truth:hover {
+  color: #eeff56;
+  text-shadow: 10px 20px  #ccc;
+}
+
+h2 {
+  font-family: 'Archivo', sans-serif;
+  font-size: 9.5em;
+  padding: 20px;
+  margin: 0;
+  font-weight: 800;
+}
+
+@media screen and (max-width: 1350px) {
+  h2 {
+    font-size: 8em;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  h2 {
+    font-size: 5em;
+  }
+}
+
+h2 span {
+  position: relative;
+  top: 20px;
+  display: inline-block;
+  -webkit-animation: bounce .3s ease infinite alternate;
+          animation: bounce .3s ease infinite alternate;
+}
+
+h2 span:nth-child(2) {
+  -webkit-animation-delay: .1s;
+          animation-delay: .1s;
+}
+
+h2 span:nth-child(3) {
+  -webkit-animation-delay: .2s;
+          animation-delay: .2s;
+}
+
+h2 span:nth-child(4) {
+  -webkit-animation-delay: .3s;
+          animation-delay: .3s;
+}
+
+h2 span:nth-child(5) {
+  -webkit-animation-delay: .4s;
+          animation-delay: .4s;
+}
+
+h2 span:nth-child(6) {
+  -webkit-animation-delay: .5s;
+          animation-delay: .5s;
+}
+
+h2 span:nth-child(7) {
+  -webkit-animation-delay: .6s;
+          animation-delay: .6s;
+}
+
+h2 span:nth-child(8) {
+  -webkit-animation-delay: .7s;
+          animation-delay: .7s;
+}
+
+@-webkit-keyframes bounce {
+  100% {
+    top: -20px;
+    text-shadow: 0 1px 0 #CCC, 0 2px 0 #CCC, 0 3px 0 #CCC, 0 4px 0 #CCC, 0 5px 0 #CCC, 0 6px 0 #CCC, 0 7px 0 #CCC, 0 8px 0 #CCC, 0 9px 0 #CCC, 0 50px 25px rgba(0, 0, 0, 0.2);
+  }
+}
+
+@keyframes bounce {
+  100% {
+    top: -20px;
+    text-shadow: 0 1px 0 #CCC, 0 2px 0 #CCC, 0 3px 0 #CCC, 0 4px 0 #CCC, 0 5px 0 #CCC, 0 6px 0 #CCC, 0 7px 0 #CCC, 0 8px 0 #CCC, 0 9px 0 #CCC, 0 50px 25px rgba(0, 0, 0, 0.2);
+  }
+}
+/*# sourceMappingURL=question-1.css.map */
