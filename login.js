@@ -84,20 +84,20 @@ async function signInWithGoogle() {
 
 
 // checking user status if changes login logout this runs
-onAuthStateChanged(auth, (user) => {
-    if (user) {
-      document.getElementById("user").innerHTML = `
-        <ul>
-        <li>id: ${user.uid} </li>
-        <li>user:${user.email}</li>
-        <li>last sign in: ${user.metadata.lastSignInTime}</li>
-        </ul>
-        `;
-    } else {
-      document.getElementById("user").innerHTML = ''
-      console.log("signed out");
-    }
-  });
+                // onAuthStateChanged(auth, (user) => {
+                //     if (user) {
+                //       document.getElementById("user").innerHTML = `
+                //         <ul>
+                //         <li>id: ${user.uid} </li>
+                //         <li>user:${user.email}</li>
+                //         <li>last sign in: ${user.metadata.lastSignInTime}</li>
+                //         </ul>
+                //         `;
+                //     } else {
+                //       document.getElementById("user").innerHTML = ''
+                //       console.log("signed out");
+                //     }
+                //   });
 
 
 const loginPage = `
@@ -120,8 +120,10 @@ const loggedIn = `
 
 <input type="submit" id="sign_out" name="sign_out" value="Sign out" /><br><br><br>
 
+<button><a href="./pages/question-1/question-1.html">Start the quiz!</a></button>
+<br><br>
 
-<button>Start the quiz!</button><br><br>
+<div><img src="ready.gif"/></div>
 </form>`
 
 

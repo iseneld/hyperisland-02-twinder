@@ -42,10 +42,37 @@ button {
   font-size: 1.8em;
   border-radius: 20px;
   background-color: transparent;
+  border: 2px solid #fca19e;
+  color: #fca19e;
 }
 
 input {
   background-color: transparent;
   font-size: 1.2em;
+  border-radius: 20px;
+  border: 2px solid #fca19e;
+  color: #fca19e;
+}
+
+a {
+  padding-right: 20px;
+  padding-left: 20px;
+  text-decoration: none;
+  color: #fca19e;
+}
+
+img {
+  max-width: 500px;
+  padding-top: 4%;
+}
+
+.twinder_logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 4%;
 }
 /*# sourceMappingURL=login.css.map */
