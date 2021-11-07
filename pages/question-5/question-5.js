@@ -22,6 +22,8 @@ const firebaseConfig = {
 
  const app = initializeApp(firebaseConfig);
  const db = getFirestore(app);
+
+ 
  
 document.getElementById("1").onclick = async () =>{
     //Add a new info into database
