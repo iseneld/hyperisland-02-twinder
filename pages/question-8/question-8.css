@@ -54,6 +54,7 @@ main {
   transition: .2s;
   text-align: center;
   color: #1b1b1b;
+  cursor: pointer;
 }
 
 .legsorfingers--second {
