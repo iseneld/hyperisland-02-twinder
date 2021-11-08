@@ -13,16 +13,17 @@ main {
 }
 
 .question_container {
-  width: 60vw;
+  width: 70vw;
   height: 60vh;
-  margin: 20vh 20vw 20vh 20vw;
+  margin: 20vh 15vw 20vh 15vw;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-content: center;
   background-color: white;
   text-align: center;
-  font-family: Archivo;
+  font-family: "Archivo", sans-serif;
+  font-size: 1.5rem;
 }
 
 .hats {
