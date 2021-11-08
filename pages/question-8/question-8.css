@@ -1,0 +1,93 @@
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  height: 98vh;
+  margin: auto;
+  background-color: #8338EC;
+}
+
+.logo {
+  position: absolute;
+  margin: auto;
+  margin-top: -580px;
+  height: 10vh;
+  width: 15vw;
+  background-image: url("./twinder.png");
+  background-size: cover;
+}
+
+.questionContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 70%;
+  width: 80%;
+  text-align: center;
+  padding: 20px;
+}
+
+.legsorfingers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50%;
+  height: 95%;
+  padding: 35px;
+  border: solid 5px #1b1b1b;
+  background-color: white;
+  -webkit-transition: .2s;
+  transition: .2s;
+  text-align: center;
+  color: #1b1b1b;
+}
+
+.legsorfingers--second {
+  border-left: none;
+}
+
+.legsorfingers--second h2:hover {
+  color: #FB5607;
+}
+
+.legsorfingers:hover {
+  background-color: #1b1b1b;
+  color: #FF006E;
+}
+
+.or {
+  position: absolute;
+  height: 120px;
+  width: 120px;
+  margin-top: 210px;
+  margin-left: 510px;
+  background-image: url("./or.png");
+  background-size: cover;
+}
+
+h2 {
+  font-family: 'Archivo', sans-serif;
+  font-size: 5em;
+  padding: 20px;
+}
+
+@media screen and (max-width: 1200px) {
+  h2 {
+    font-size: 3em;
+  }
+}
+/*# sourceMappingURL=question-8.css.map */
