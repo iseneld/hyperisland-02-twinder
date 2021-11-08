@@ -23,17 +23,19 @@ const firebaseConfig = {
  const app = initializeApp(firebaseConfig);
  const db = getFirestore(app);
 
- 
+ userId = firebase.auth().currentUser.uid;
+ console.log("userID" + userId)
  
 document.querySelector(".truth").onclick = async () =>{
     //Add a new info into database
-    await setDoc(doc(db, "truthOrDare", "savedAnswer"), {
-        answerIs: "truth"
+    await setDoc(doc(db, "users", `${userId}`), {
+        question01 : "truth",
+        
     })
 }
 document.querySelector(".truth--dare").onclick = async () =>{
     //Add a new info into database
-    await setDoc(doc(db, "truthOrDare", "savedAnswer"), {
-        answerIs: "dare"
+    await setDoc(doc(db, "users", `${userId}`), {
+        question01 : "dare"
     })
 }
