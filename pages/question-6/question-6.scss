@@ -1,0 +1,47 @@
+* {
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  background-color: rgb(249, 37, 69);
+}
+
+main {
+  width: 100vw;
+  height: 100vh;
+}
+
+.question_container {
+  width: 70vw;
+  height: 60vh;
+  margin: 20vh 15vw 20vh 15vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-content: center;
+  background-color: white;
+  text-align: center;
+  font-family: "Archivo", sans-serif;
+  font-size: 1.5rem;
+}
+
+.hats {
+  margin-top: 5vh;
+  display: flex;
+  justify-content: space-evenly;
+  button {
+    width: 28%;
+    background: none;
+    border: none;
+    cursor: pointer;
+    img {
+      width: 90%;
+      border: none;
+    }
+  }
+  button:hover {
+    transition-duration: 0.3s;
+    border: 10px solid aquamarine;
+  }
+}
