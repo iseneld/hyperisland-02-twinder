@@ -92,43 +92,43 @@ async function signInWithGoogle() {
 
 
 // checking user status if changes login logout this runs
-                onAuthStateChanged(auth, (user) => {
-                  
-                  if (user) {
-                      // document.getElementById("user").innerHTML = `
-                      //   <ul>
-                      //   <li>id: ${user.uid} </li>
-                      //   <li>user:${user.email}</li>
-                      //   <li>last sign in: ${user.metadata.lastSignInTime}</li>
-                      //   </ul>
-                      //   `;
-                    console.log("UID is " + user.uid);
-                    
-                    async function createCollectionWithUID() {
-                          
-                      await setDoc(doc(db, "users", `${user.uid}`), {
-                        question01 : "",
-                        question02 : "",
-                        question03 : "",
-                        question04 : "",
-                        question05 : "",
-                        question06 : "",
-                        question07 : "",
-                        question08 : "",
-                        question09 : "",
-                        question10 : ""
-                      })
-                        
-                      console.log("something is saved")  
-                    }
-                    createCollectionWithUID()
-                      
-                    //  else {
-                    //   document.getElementById("user").innerHTML = ''
-                    //   console.log("signed out");
-                    // }
-                  }  
-                });
+onAuthStateChanged(auth, (user) => {
+  
+  if (user) {
+      // document.getElementById("user").innerHTML = `
+      //   <ul>
+      //   <li>id: ${user.uid} </li>
+      //   <li>user:${user.email}</li>
+      //   <li>last sign in: ${user.metadata.lastSignInTime}</li>
+      //   </ul>
+      //   `;
+    console.log("UID is " + user.uid);
+    
+    async function createCollectionWithUID() {
+          
+      await setDoc(doc(db, "users", `${user.uid}`), {
+        question01 : "",
+        question02 : "",
+        question03 : "",
+        question04 : "",
+        question05 : "",
+        question06 : "",
+        question07 : "",
+        question08 : "",
+        question09 : "",
+        question10 : ""
+      })
+        
+      console.log("something is saved")  
+    }
+    createCollectionWithUID()
+      
+    //  else {
+    //   document.getElementById("user").innerHTML = ''
+    //   console.log("signed out");
+    // }
+  }  
+});
 
 
 const loginPage = `

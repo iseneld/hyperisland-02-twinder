@@ -6,6 +6,8 @@ import {
   setDoc
 } from "https://www.gstatic.com/firebasejs/9.0.0/firebase-firestore.js";
 
+<<<<<<< HEAD
+=======
 import {
     getAuth,
     createUserWithEmailAndPassword,
@@ -17,6 +19,7 @@ import {
   } from "https://www.gstatic.com/firebasejs/9.2.0/firebase-auth.js";
   
 
+>>>>>>> b854dfca2bb8c31453633ce1e48ba03e95b6f4d0
 
 const firebaseConfig = {
    apiKey: "AIzaSyAzkY6QneE4ipawLKGPm8xMSBc3MRjz1Ew",
@@ -34,10 +37,13 @@ const firebaseConfig = {
  const app = initializeApp(firebaseConfig);
  const db = getFirestore(app);
 
+<<<<<<< HEAD
+=======
 
 
 
 
+>>>>>>> b854dfca2bb8c31453633ce1e48ba03e95b6f4d0
  
  
 document.getElementById("1").onclick = async () =>{
