@@ -1,0 +1,67 @@
+* {
+  padding: 0;
+}
+
+html {
+  background: url(./Media/galaxy.jpg) no-repeat center center fixed;
+  background-size: cover;
+}
+
+body {
+  margin: 0;
+}
+
+main {
+  width: 100vw;
+  height: 100vh;
+}
+
+.question12_container {
+  width: 80vw;
+  height: 100vh;
+  margin: 0 10vw 0 10vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-content: center;
+  text-align: center;
+  font-family: "archivo", sans-serif;
+  font-size: 2rem;
+  color: #fff;
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #f09,
+    0 0 82px #f09, 0 0 92px #f09, 0 0 102px #f09, 0 0 151px #f09;
+  h1 {
+    font-size: 5rem;
+    padding: 0;
+    margin: 8vh 0 0 0;
+  }
+}
+
+.zodiac {
+  margin-top: 5vh;
+  display: grid;
+  grid-template-columns: 13vw 13vw 13vw 13vw 13vw 13vw;
+  grid-template-rows: 30vh 30vh;
+  .zodiac-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    button {
+      display: flex;
+      justify-content: center;
+      align-self: center;
+      width: 80%;
+      background: none;
+      border: none;
+      cursor: pointer;
+      img {
+        max-width: 80%;
+        max-height: 70%;
+        border: none;
+        filter: invert(100%);
+        -webkit-filter: invert(100%);
+      }
+    }
+  }
+}

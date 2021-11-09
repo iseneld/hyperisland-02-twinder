@@ -10,6 +10,13 @@ import {
   onAuthStateChanged
 } from "https://www.gstatic.com/firebasejs/9.2.0/firebase-auth.js";
 
+import {
+  getFirestore,
+  doc,
+  setDoc
+} from "https://www.gstatic.com/firebasejs/9.2.0/firebase-firestore.js";
+
+
 
 const firebaseConfig = {
    apiKey: "AIzaSyAzkY6QneE4ipawLKGPm8xMSBc3MRjz1Ew",
@@ -27,7 +34,7 @@ const firebaseConfig = {
  const app = initializeApp(firebaseConfig);
  const analytics = getAnalytics(app);
  const auth = getAuth(app);
-
+ const db = getFirestore(app);
 
 
 
@@ -77,6 +84,7 @@ async function signInWithGoogle() {
 
   try {
     await signInWithPopup(auth, provider)
+    loginSuccess()
   } catch (error) {
     console.log('error')
   }
@@ -84,6 +92,7 @@ async function signInWithGoogle() {
 
 
 // checking user status if changes login logout this runs
+<<<<<<< HEAD
                 // onAuthStateChanged(auth, (user) => {
                 //     if (user) {
                 //       document.getElementById("user").innerHTML = `
@@ -98,6 +107,45 @@ async function signInWithGoogle() {
                 //       console.log("signed out");
                 //     }
                 //   });
+=======
+                onAuthStateChanged(auth, (user) => {
+                  
+                  if (user) {
+                      // document.getElementById("user").innerHTML = `
+                      //   <ul>
+                      //   <li>id: ${user.uid} </li>
+                      //   <li>user:${user.email}</li>
+                      //   <li>last sign in: ${user.metadata.lastSignInTime}</li>
+                      //   </ul>
+                      //   `;
+                    console.log("UID is " + user.uid);
+                    
+                    async function createCollectionWithUID() {
+                          
+                      await setDoc(doc(db, "users", `${user.uid}`), {
+                        question01 : "",
+                        question02 : "",
+                        question03 : "",
+                        question04 : "",
+                        question05 : "",
+                        question06 : "",
+                        question07 : "",
+                        question08 : "",
+                        question09 : "",
+                        question10 : ""
+                      })
+                        
+                      console.log("something is saved")  
+                    }
+                    createCollectionWithUID()
+                      
+                    //  else {
+                    //   document.getElementById("user").innerHTML = ''
+                    //   console.log("signed out");
+                    // }
+                  }  
+                });
+>>>>>>> b854dfca2bb8c31453633ce1e48ba03e95b6f4d0
 
 
 const loginPage = `
