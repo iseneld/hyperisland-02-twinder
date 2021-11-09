@@ -28,6 +28,11 @@ main {
   background-size: cover;
 }
 
+a, a:hover, a:focus, a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
 .questionContainer {
   display: -webkit-box;
   display: -ms-flexbox;
