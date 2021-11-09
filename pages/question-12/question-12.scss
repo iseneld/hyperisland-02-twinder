@@ -46,7 +46,11 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    align-items: center;
     button {
+      display: flex;
+      justify-content: center;
+      align-self: center;
       width: 80%;
       background: none;
       border: none;
