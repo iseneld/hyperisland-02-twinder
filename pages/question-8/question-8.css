@@ -18,6 +18,12 @@ main {
   background-color: #8338EC;
 }
 
+a, a:hover, a:focus, a:active {
+  z-index: 0;
+  text-decoration: none;
+  color: inherit;
+}
+
 .logo {
   position: absolute;
   margin: auto;

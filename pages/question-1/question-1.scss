@@ -24,6 +24,12 @@ main {
     background-image: url("./twinder.png");
     background-size: cover;
   }
+
+  //this removes auto styling on <a>
+  a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: inherit;
+}
   
   .questionContainer {
     display: flex;

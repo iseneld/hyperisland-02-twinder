@@ -45,3 +45,28 @@
   span {
     font-weight: bold;
   }
+
+  a {
+      margin: auto;
+  }
+
+  button {
+    width: 200px;
+    background-color: white;
+    border: solid 5px black;
+    letter-spacing: 1px;
+    color: black;
+    padding: 15px 35px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    cursor: pointer;
+    margin: auto;
+}
+
+button:hover {
+    background-color: black;
+    color: white;
+    
+}
