@@ -28,3 +28,4 @@ slider.oninput = function () {
   outputAge.innerHTML = Math.round(120 - this.value / 950);
   setStyle(document.querySelector("body"));
 };
+
