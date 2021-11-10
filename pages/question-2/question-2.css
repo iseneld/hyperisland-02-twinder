@@ -28,7 +28,10 @@ main {
   background-size: cover;
 }
 
-a, a:hover, a:focus, a:active {
+a,
+a:hover,
+a:focus,
+a:active {
   z-index: 0;
   text-decoration: none;
   color: inherit;
@@ -57,8 +60,8 @@ a, a:hover, a:focus, a:active {
   border: solid 5px #1b1b1b;
   background-color: white;
   cursor: pointer;
-  -webkit-transition: .2s;
-  transition: .2s;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
   text-align: center;
   color: #1b1b1b;
 }
@@ -91,7 +94,7 @@ a, a:hover, a:focus, a:active {
 }
 
 h2 {
-  font-family: 'Archivo', sans-serif;
+  font-family: "Archivo", sans-serif;
   font-size: 5em;
   padding: 20px;
 }

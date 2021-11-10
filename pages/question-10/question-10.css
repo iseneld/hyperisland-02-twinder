@@ -25,19 +25,18 @@ main {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -ms-flex-line-pack: center;
-  align-content: center;
+      align-content: center;
   text-align: center;
   font-family: "archivo", sans-serif;
   font-size: 2rem;
   color: #fff;
-  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #f09,
-    0 0 82px #f09, 0 0 92px #f09, 0 0 102px #f09, 0 0 151px #f09;
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #f09, 0 0 82px #f09, 0 0 92px #f09, 0 0 102px #f09, 0 0 151px #f09;
 }
 
 .question12_container h1 {
@@ -51,9 +50,9 @@ main {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 13vw 13vw 13vw 13vw 13vw 13vw;
-  grid-template-columns: 13vw 13vw 13vw 13vw 13vw 13vw;
+      grid-template-columns: 13vw 13vw 13vw 13vw 13vw 13vw;
   -ms-grid-rows: 30vh 30vh;
-  grid-template-rows: 30vh 30vh;
+      grid-template-rows: 30vh 30vh;
 }
 
 .zodiac .zodiac-item {
@@ -62,14 +61,14 @@ main {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .zodiac .zodiac-item button {
@@ -77,10 +76,10 @@ main {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -ms-flex-item-align: center;
-  align-self: center;
+      align-self: center;
   width: 80%;
   background: none;
   border: none;
@@ -94,4 +93,4 @@ main {
   filter: invert(100%);
   -webkit-filter: invert(100%);
 }
-/*# sourceMappingURL=question-12.css.map */
+/*# sourceMappingURL=question-10.css.map */
