@@ -42,3 +42,15 @@ document.querySelector(".truth--dare").onclick = async () =>{
     })
 }
 
+//change text color when answer is clicked
+
+
+document.getElementById("changeYellow").onclick = function() {
+	document.getElementById("output").style.color = 'yellow';
+}
+
+document.getElementById("changeRed").onclick = function() {
+	document.getElementById("output2").style.color = 'red';
+}
+
+
