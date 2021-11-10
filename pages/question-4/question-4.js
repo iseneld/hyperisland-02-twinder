@@ -37,7 +37,7 @@ slider.oninput = function() {
 }
 
 let sliderSentences = 
-    ["Quite a vibe actually", "Not bothered", "I´m fine", "My day was good before this",  "I want to destroy something", "Where's the nearest bridge?", "Drag slider!", "I actually feel happier now"];
+    ["Quite a vibe actually", "Not bothered", "I´m fine", "My day was good before this",  "I want to destroy something", "Can I burn the internet?", "Drag slider!", "I actually feel happier now"];
 
 output.innerHTML = sliderSentences [6]; 
 
