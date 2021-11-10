@@ -144,6 +144,14 @@ main {
   cursor: pointer;
 }
 
+.scary button:hover {
+  border: solid 8px #0ff;
+}
+
+.scary button:focus {
+  border: solid 8px red;
+}
+
 .scary img {
   width: 100%;
   border: none;
