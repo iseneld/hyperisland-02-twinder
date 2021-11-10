@@ -153,6 +153,20 @@ h2 span:nth-child(8) { animation-delay: .7s; }
                  0 50px 25px rgba(0, 0, 0, .2);
   }
 }
+}
 
+button {
+  width: 200px;
+  background-color: white;
+  border: solid 5px black;
+  letter-spacing: 1px;
+  padding: 15px 35px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  cursor: pointer;
+  margin: auto;
+}
 
-/*# sourceMappingURL=styles.css.map */
+/* # sourceMappingURL=styles.css.map */
