@@ -87,6 +87,12 @@ main {
     border: none;
     cursor: pointer;
   }
+  button:hover {
+    border: solid 8px #0ff;
+  }
+  button:focus {
+    border: solid 8px red;
+  }
   img {
     width: 100%;
     border: none;
