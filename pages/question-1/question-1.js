@@ -33,7 +33,7 @@ document.querySelector(".truth").onclick = async () =>{
 }
 document.querySelector(".truth--dare").onclick = async () =>{
     //Add a new info into database
-    await setDoc(doc(db, "truthOrDare", "savedAnswer"), {
-        answerIs: "dare"
+    await setDoc(doc(db, "users", `${userId}`), {
+        question01 : "dare"
     })
 }

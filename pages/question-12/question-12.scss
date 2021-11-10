@@ -25,13 +25,13 @@ main {
   justify-content: flex-start;
   align-content: center;
   text-align: center;
-  font-family: "Lato", sans-serif;
+  font-family: "archivo", sans-serif;
   font-size: 2rem;
   color: #fff;
   text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #f09,
     0 0 82px #f09, 0 0 92px #f09, 0 0 102px #f09, 0 0 151px #f09;
   h1 {
-    font-size: 4.5rem;
+    font-size: 5rem;
     padding: 0;
     margin: 8vh 0 0 0;
   }
@@ -46,7 +46,11 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    align-items: center;
     button {
+      display: flex;
+      justify-content: center;
+      align-self: center;
       width: 80%;
       background: none;
       border: none;

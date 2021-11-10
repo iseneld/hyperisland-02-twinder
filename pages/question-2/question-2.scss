@@ -13,6 +13,7 @@ main {
     height: 98vh;
     margin: auto;
     background-color: rgb(136, 252, 155);
+   
   }
   
   .logo {
@@ -73,10 +74,13 @@ main {
     position: absolute;
     height: 120px;
     width: 120px;
-    margin-top: 210px;
-    margin-left: 510px;
+    // margin-top: 210px;
+    // margin-left: 510px;
     background-image: url("./or.png");
     background-size: cover;
+  //  display: flex;
+   justify-content: center;
+   align-items: center;
   }
   
   h2 {
