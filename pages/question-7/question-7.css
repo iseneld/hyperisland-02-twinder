@@ -48,6 +48,14 @@
 
   a {
       margin: auto;
+      padding: 15px 35px;
+      text-decoration: none;
+      color: black;
+      font-weight: 600;
+  }
+
+  a:hover {
+      color: white;
   }
 
   button {
@@ -55,7 +63,6 @@
     background-color: white;
     border: solid 5px black;
     letter-spacing: 1px;
-    color: black;
     padding: 15px 35px;
     text-align: center;
     text-decoration: none;
@@ -66,7 +73,5 @@
 }
 
 button:hover {
-    background-color: black;
-    color: white;
-    
+    background-color: black;    
 }
