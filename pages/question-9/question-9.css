@@ -21,9 +21,6 @@ main {
   width: 90vw;
   height: 90vh;
   margin: 5vh 5vw 5vh 5vw;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -155,5 +152,24 @@ main {
 .scary img {
   width: 100%;
   border: none;
+}
+
+button {
+  background-color: red;
+  border: solid 3px black;
+  letter-spacing: 1px;
+  color: white;
+  padding: 15px 35px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  cursor: pointer;
+  margin-top: 40px;
+}
+
+button:hover {
+  background-color: black;
+  color: red;
 }
 /*# sourceMappingURL=question-9.css.map */

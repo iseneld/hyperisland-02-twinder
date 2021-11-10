@@ -3,7 +3,8 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/9.0.0/firebase
 import {
   getFirestore,
   doc,
-  setDoc
+  setDoc,
+  updateDoc
 } from "https://www.gstatic.com/firebasejs/9.0.0/firebase-firestore.js";
 
 
@@ -27,25 +28,29 @@ const firebaseConfig = {
  
 document.getElementById("1").onclick = async () =>{
     //Add a new info into database
-    await setDoc(doc(db, "memeTest", "savedAnswer"), {
-        answerIs: "1"
+    var user =  sessionStorage.getItem("user") 
+    await updateDoc(doc(db, "users", `${user}`), {
+        question03: "first meme"
     })
 }
 document.getElementById("2").onclick = async () =>{
     //Add a new info into database
-    await setDoc(doc(db, "memeTest", "savedAnswer"), {
-        answerIs: "2"
+    var user =  sessionStorage.getItem("user") 
+    await updateDoc(doc(db, "users", `${user}`), {
+        question03: "second meme"
     })
 }
 document.getElementById("3").onclick = async () =>{
     //Add a new info into database
-    await setDoc(doc(db, "memeTest", "savedAnswer"), {
-        answerIs: "3"
+    var user =  sessionStorage.getItem("user") 
+    await updateDoc(doc(db, "users", `${user}`), {
+        question03: "third meme"
     })
 }
 document.getElementById("4").onclick = async () =>{
     //Add a new info into database
-    await setDoc(doc(db, "memeTest", "savedAnswer"), {
-        answerIs: "4"
+    var user =  sessionStorage.getItem("user") 
+    await updateDoc(doc(db, "users", `${user}`), {
+        question03: "forth meme"
     })
 }

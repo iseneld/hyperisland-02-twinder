@@ -21,7 +21,7 @@ main {
   width: 90vw;
   height: 90vh;
   margin: 5vh 5vw 5vh 5vw;
-  display: flex;
+  // display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-content: center;
@@ -97,4 +97,23 @@ main {
     width: 100%;
     border: none;
   }
+}
+
+button {
+  background-color: red;
+  border: solid 3px black;
+  letter-spacing: 1px;
+  color: white;
+  padding: 15px 35px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  cursor: pointer;
+  margin-top:40px;
+}
+
+button:hover {
+  background-color: black;
+  color: red;
 }

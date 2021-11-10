@@ -42,6 +42,11 @@ h3 {
   padding: 20px;
 }
 
+#button_div{
+display: flex;
+justify-content: center;
+}
+
 .hats {
   margin-top: 5vh;
   display: flex;
@@ -63,3 +68,21 @@ h3 {
   }
 }
 
+button {
+  background-color: red;
+  border: solid 3px black;
+  letter-spacing: 1px;
+  color: white;
+  padding: 15px 35px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  cursor: pointer;
+  width: 200px;
+}
+
+button:hover {
+  background-color: black;
+  color: red;
+}

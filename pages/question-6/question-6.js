@@ -41,46 +41,22 @@ const firebaseConfig = {
   //Add a new info into database
   var user =  sessionStorage.getItem("user") 
   await updateDoc(doc(db, "users", `${user}`), {
-      question05: "1"
+      question06: "soda hat"
   })
 }
 document.getElementById("2").onclick = async () =>{
   //Add a new info into database
   var user =  sessionStorage.getItem("user") 
   await updateDoc(doc(db, "users", `${user}`), {
-      question05: "2"
+      question06: "cowboy hat"
   })
 }
 document.getElementById("3").onclick = async () =>{
   //Add a new info into database
   var user =  sessionStorage.getItem("user") 
   await updateDoc(doc(db, "users", `${user}`), {
-      question05: "3"
-  })
-}
-document.getElementById("4").onclick = async () =>{
-  //Add a new info into database
-  var user =  sessionStorage.getItem("user") 
-  await updateDoc(doc(db, "users", `${user}`), {
-      question05: "4"
+      question06: "mario hat"
   })
 }
 
-//Linking divs to next page:
-
-// document.getElementById("1").addEventListener("click", function() {
-//     location.href = '../question-6/question-6.html';
-// });
-
-//   document.getElementById("2").addEventListener("click", function() {
-//     location.href = '../question-6/question-6.html';
-// });
-
-//   document.getElementById("3").addEventListener("click", function() {
-//     location.href = '../question-6/question-6.html';
-// });
-
-//   document.getElementById("4").addEventListener("click", function() {
-//     location.href = '../question-6/question-6.html';
-// });
 

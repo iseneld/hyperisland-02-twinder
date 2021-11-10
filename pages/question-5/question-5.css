@@ -212,4 +212,22 @@ h2 {
 h3 {
   font-family: 'Lato', sans-serif;
 }
+
+button {
+  background-color: red;
+  border: solid 3px black;
+  letter-spacing: 1px;
+  color: white;
+  padding: 15px 35px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: black;
+  color: red;
+}
 /*# sourceMappingURL=question-5.css.map */

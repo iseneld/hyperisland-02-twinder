@@ -1,3 +1,6 @@
+//Firebase
+
+
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.0.0/firebase-app.js";
 
 import {
@@ -26,20 +29,23 @@ const firebaseConfig = {
 
  
  
-document.querySelector(".truth").onclick = async () =>{
-    //Add a new info into database
-    
-    var user =  sessionStorage.getItem("user") 
-    await updateDoc(doc(db, "users", `${user}`), {
-        question01: "truth"
-    })
-    
-}
-document.querySelector(".truth--dare").onclick = async () =>{
-    //Add a new info into database
-    var user =  sessionStorage.getItem("user") 
-    await updateDoc(doc(db, "users", `${user}`), {
-        question01 : "dare"
-    })
-}
 
+
+
+document.getElementById("question-7-slider").onchange = async () =>{
+  //Add a new info into database
+  var user =  sessionStorage.getItem("user") 
+
+
+  const inputs = document.getElementById("question-7-slider");
+  console.log(inputs.value)
+
+
+  function handleUpdate(){
+  console.log(inputs.value);
+};
+inputs.addEventListener('change', handleUpdate);
+  await updateDoc(doc(db, "users", `${user}`), {
+      question07: `${inputs.value}` + " kr"
+  })
+}

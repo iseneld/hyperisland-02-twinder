@@ -88,3 +88,30 @@ h3{
     width: 70vw;
   }
 } */
+
+main{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+button {
+  background-color: red;
+  border: solid 3px black;
+  letter-spacing: 1px;
+  color: white;
+  padding: 15px 35px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  cursor: pointer;
+  width: 200px;
+  
+}
+
+button:hover {
+  background-color: black;
+  color: red;
+}

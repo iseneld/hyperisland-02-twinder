@@ -28,12 +28,12 @@
         <div class="questionContainer">
             <h2>How much does this song piss you of?</h2>
             
-            <form>
+            <form id = "controls">
                 <input type="range" min="1" max="100" value="50" class="slider" id="question-4-slider"/> 
                 <br> <span id="show-values"> </span>
             </form> 
         
-            <a href="../question-5/question-5.html"><button>NEXT</button></a><br>
+            
 
             <audio class="audio" controls autoplay>
                 <source src="horse.ogg" type="audio/ogg"> 
@@ -42,11 +42,13 @@
             </audio> 
 
         </div>
+        <button onclick="window.location.href='../question-5/question-5.html';">NEXT</button>
     </main>
 
-<script src="question-4.js"></script>
-</body>
 
+
+</body>
+<script type="module" src="question-4.js"></script>
 
 </html>
 

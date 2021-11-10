@@ -26,20 +26,19 @@ const firebaseConfig = {
 
  
  
-document.querySelector(".truth").onclick = async () =>{
+document.querySelector(".legsorfingers").onclick = async () =>{
     //Add a new info into database
     
     var user =  sessionStorage.getItem("user") 
     await updateDoc(doc(db, "users", `${user}`), {
-        question01: "truth"
+        question08: "cure cancer"
     })
     
 }
-document.querySelector(".truth--dare").onclick = async () =>{
+document.querySelector(".legsorfingers--second").onclick = async () =>{
     //Add a new info into database
     var user =  sessionStorage.getItem("user") 
     await updateDoc(doc(db, "users", `${user}`), {
-        question01 : "dare"
+        question08: "be the first to make contact with aliens"
     })
 }
-
