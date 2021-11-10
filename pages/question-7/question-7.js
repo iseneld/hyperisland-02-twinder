@@ -25,7 +25,7 @@ function setStyle(item, i) {
 
 slider.oninput = function () {
   outputSalary.innerHTML = this.value;
-  outputAge.innerHTML = Math.round(110 - this.value / 600);
+  outputAge.innerHTML = Math.round(110 - this.value / 950);
   setStyle(document.querySelector("body"));
 };
 
