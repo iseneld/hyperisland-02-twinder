@@ -1,0 +1,81 @@
+@font-face {
+  font-family: "nighty_demoregular";
+  src: url("./fonts/nightydemo-nrjop-webfont.woff") format("woff1"), url("./fonts/nightydemo-nrjop-webfont.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  width: auto;
+  height: 100vh;
+  background-image: -webkit-gradient(linear, left top, right top, from(#b8dde6), to(#dbfa3c));
+  background-image: linear-gradient(to right, #b8dde6, #dbfa3c);
+}
+
+h1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-align: space-around;
+      -ms-flex-align: space-around;
+          align-items: space-around;
+  font-family: "nighty_demoregular";
+  font-size: 3rem;
+  margin-top: 2rem;
+  color: whitesmoke;
+}
+
+button {
+  font-size: 1.8em;
+  border-radius: 20px;
+  background-color: transparent;
+  border: 2px solid #fca19e;
+  color: #fca19e;
+}
+
+.twinder_logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.twinder_logo img {
+  width: 45%;
+}
+
+.match_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 40vw;
+  height: 30vh;
+  margin: auto;
+  margin-top: 2rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: whitesmoke;
+  border-radius: 40%;
+}
+
+.match_container img {
+  width: 25%;
+}
+/*# sourceMappingURL=result.css.map */
