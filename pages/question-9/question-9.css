@@ -154,7 +154,7 @@ main {
   border: none;
 }
 
-button {
+.next button {
   background-color: red;
   border: solid 3px black;
   letter-spacing: 1px;
@@ -168,7 +168,7 @@ button {
   margin-top: 40px;
 }
 
-button:hover {
+.next button:hover {
   background-color: black;
   color: red;
 }
