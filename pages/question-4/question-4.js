@@ -42,3 +42,13 @@ let sliderSentences =
 output.innerHTML = sliderSentences [6]; 
 
 
+function testtest(e) {
+  // read the value from the slider:
+  var value = document.getElementById("question-4-slider").value;
+  // now compare:
+  if (value > 0 && value < 5) {
+      alert("First");
+  } else {
+      alert("Second");
+  }
+}

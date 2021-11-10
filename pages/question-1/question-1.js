@@ -3,7 +3,8 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/9.0.0/firebase
 import {
   getFirestore,
   doc,
-  setDoc
+  setDoc,
+  updateDoc
 } from "https://www.gstatic.com/firebasejs/9.0.0/firebase-firestore.js";
 
 
@@ -27,13 +28,17 @@ const firebaseConfig = {
  
 document.querySelector(".truth").onclick = async () =>{
     //Add a new info into database
-    await setDoc(doc(db, "truthOrDare", "savedAnswer"), {
-        answerIs: "truth"
+    
+    var user =  sessionStorage.getItem("user") 
+    await updateDoc(doc(db, "users", `${user}`), {
+        question01: "truth"
     })
+    
 }
 document.querySelector(".truth--dare").onclick = async () =>{
     //Add a new info into database
-    await setDoc(doc(db, "users", `${userId}`), {
+    await updateDoc(doc(db, "users", `${user}`), {
         question01 : "dare"
     })
 }
+
