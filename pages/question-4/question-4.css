@@ -32,12 +32,16 @@ main {
 }
 
 .questionContainer {
-  height: 70%;
+  height: 80%;
   width: 60%;
   border: 5px solid;
   background-color: white;
   text-align: center;
   padding: 20px;
+}
+
+.questionContainer video {
+  width: 70%;
 }
 
 audio {
@@ -50,11 +54,12 @@ audio {
   height: 25px;
   background: #d3d3d3;
   outline: none;
-  margin-bottom: 4em;
+  margin-top: 3em;
+  margin-bottom: 2em;
   opacity: 0.7;
-  -webkit-transition: .2s;
-  -webkit-transition: opacity .2s;
-  transition: opacity .2s;
+  -webkit-transition: 0.2s;
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s;
 }
 
 .slider:hover {
@@ -73,18 +78,18 @@ audio {
 .slider::-moz-range-thumb {
   width: 25px;
   height: 25px;
-  background: #04AA6D;
+  background: #04aa6d;
   cursor: pointer;
 }
 
 #show-values {
   font-size: 1.5em;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
 h2 {
-  font-family: 'Archivo', sans-serif;
-  font-size: 5em;
+  font-family: "Archivo", sans-serif;
+  font-size: 2em;
 }
 
 button {
@@ -98,7 +103,7 @@ button {
   display: inline-block;
   font-size: 20px;
   cursor: pointer;
-  margin-top: 4.6em;
+  margin-top: 2em;
 }
 
 button:hover {

@@ -26,7 +26,12 @@
     <main>
         <!-- <div class="logo"></div> -->
         <div class="questionContainer">
-            <h2>How much does this song piss you of?</h2>
+            <h2>How does this song make you feel?</h2>
+
+            <video autoplay>
+                <source src="friday.mp4">
+                Your browser does not support the video tag.
+            </video>
             
             <form id = "controls">
                 <input type="range" min="1" max="100" value="50" class="slider" id="question-4-slider"/> 
@@ -34,12 +39,6 @@
             </form> 
         
             
-
-            <audio class="audio" controls autoplay>
-                <source src="horse.ogg" type="audio/ogg"> 
-                <source src="callmemaybe.mp3" type="audio/mpeg">
-                Your browser does not support the audio element.
-            </audio> 
 
         </div>
         <button onclick="window.location.href='../question-5/question-5.html';">NEXT</button>
