@@ -26,26 +26,11 @@ main {
     background-size: cover;
   }
 
-  .legs {
-      position: absolute;
-      height: 64vh;
-      width: 22vw;
-      margin-top: -340px;
-      margin-left: -1070px;
-      background-image: url("./legs.png");
-      background-size: cover;
-      transform: rotate(-20deg);
-  }
-
-  .fingers {
-    position: absolute;
-    height: 20vh;
-    width: 17vw;
-    margin-top: -520px;
-    margin-right: -500px;
-    background-image: url("./fingers.png");
-    background-size: cover;
-  }
+  a, a:hover, a:focus, a:active {
+    z-index: 0;
+    text-decoration: none;
+    color: inherit;
+}
   
   .questionContainer {
     display: flex;
@@ -66,6 +51,7 @@ main {
       border: solid 5px #1b1b1b;
       //margin: 5px;
       background-color: white;
+      cursor: pointer;
       transition: .2s;
 
       text-align: center;

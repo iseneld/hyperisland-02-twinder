@@ -46,7 +46,13 @@ a, a:hover, a:focus, a:active {
   @media screen and (max-width:1400px) {
       width: 100%;
   }
+
+  //this removes auto styling on <a>
+  a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: inherit;
 }
+
 
 .truth {
     display: flex;
