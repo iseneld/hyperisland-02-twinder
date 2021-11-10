@@ -95,6 +95,8 @@ async function signInWithGoogle() {
 onAuthStateChanged(auth, (user) => {
   
   if (user) {
+    sessionStorage.setItem("user", user.uid) 
+    console.log("stored")
       // document.getElementById("user").innerHTML = `
       //   <ul>
       //   <li>id: ${user.uid} </li>
@@ -104,7 +106,8 @@ onAuthStateChanged(auth, (user) => {
       //   `;
     console.log("UID is " + user.uid);
     
-    async function createCollectionWithUID() {
+    
+    async function createCollectionWithUID(user) {
           
       await setDoc(doc(db, "users", `${user.uid}`), {
         question01 : "",
@@ -119,9 +122,12 @@ onAuthStateChanged(auth, (user) => {
         question10 : ""
       })
         
-      console.log("something is saved")  
+      console.log("something is saved") 
+     
+     
+      
     }
-    createCollectionWithUID()
+    createCollectionWithUID(user)
       
     //  else {
     //   document.getElementById("user").innerHTML = ''
