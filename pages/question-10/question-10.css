@@ -36,7 +36,7 @@ main {
   font-family: "archivo", sans-serif;
   font-size: 2rem;
   color: #fff;
-  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #f09, 0 0 82px #f09, 0 0 92px #f09, 0 0 102px #f09, 0 0 151px #f09;
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #f09, 0 0 82px #f09, 0 0 92px #f09, 0 0 102px #f09, 0 0 151px #f09;
 }
 
 .question12_container h1 {
@@ -51,8 +51,9 @@ main {
   display: grid;
   -ms-grid-columns: 13vw 13vw 13vw 13vw 13vw 13vw;
       grid-template-columns: 13vw 13vw 13vw 13vw 13vw 13vw;
-  -ms-grid-rows: 30vh 30vh;
-      grid-template-rows: 30vh 30vh;
+  -ms-grid-rows: 25vh 25vh;
+      grid-template-rows: 25vh 25vh;
+  row-gap: 1em;
 }
 
 .zodiac .zodiac-item {
@@ -87,10 +88,30 @@ main {
 }
 
 .zodiac .zodiac-item button img {
-  max-width: 80%;
+  max-width: 90%;
   max-height: 70%;
   border: none;
   filter: invert(100%);
   -webkit-filter: invert(100%);
+}
+
+button {
+  background-color: #120116;
+  border: solid 2px white;
+  letter-spacing: 1px;
+  color: white;
+  padding: 5px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  cursor: pointer;
+  margin: auto;
+}
+
+button:hover {
+  background-color: whitesmoke;
+  color: #120116;
+  border: solid 2px #120116;
 }
 /*# sourceMappingURL=question-10.css.map */

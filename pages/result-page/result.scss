@@ -1,0 +1,55 @@
+@font-face {
+  font-family: "nighty_demoregular";
+  src: url("./fonts/nightydemo-nrjop-webfont.woff") format("woff1"),
+    url("./fonts/nightydemo-nrjop-webfont.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  width: auto;
+  height: 100vh;
+  background-image: linear-gradient(to right, #b8dde6, #dbfa3c);
+}
+h1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-items: space-around;
+  font-family: "nighty_demoregular";
+  font-size: 3rem;
+  margin-top: 2rem;
+  color: whitesmoke;
+}
+
+button {
+  font-size: 1.8em;
+  border-radius: 20px;
+  background-color: transparent;
+
+  border: 2px solid #fca19e;
+  color: #fca19e;
+}
+
+.twinder_logo {
+  display: flex;
+  justify-content: center;
+  img {
+    width: 45%;
+  }
+}
+
+.match_container {
+  display: flex;
+  flex-direction: column;
+  width: 40vw;
+  height: 30vh;
+  margin: auto;
+  margin-top: 2rem;
+  justify-content: center;
+  align-items: center;
+  background: whitesmoke;
+  border-radius: 40%;
+  img {
+    width: 25%;
+  }
+}
