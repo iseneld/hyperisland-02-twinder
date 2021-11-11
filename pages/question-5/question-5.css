@@ -203,21 +203,21 @@ main {
 }
 
 h2 {
-  font-family: 'Archivo', sans-serif;
+  font-family: "Archivo", sans-serif;
   font-size: 5em;
   margin: 0;
   margin-top: 30px;
 }
 
 h3 {
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
 button {
-  background-color: red;
+  background-color: #b1e7e3;
   border: solid 3px black;
   letter-spacing: 1px;
-  color: white;
+  color: black;
   padding: 15px 35px;
   text-align: center;
   text-decoration: none;
@@ -228,6 +228,6 @@ button {
 
 button:hover {
   background-color: black;
-  color: red;
+  color: #b1e7e3;
 }
 /*# sourceMappingURL=question-5.css.map */
