@@ -7,26 +7,21 @@ body {
   background-color: #f92545;
 }
 
-main {
-  width: 100vw;
-  height: 100vh;
-}
-
 h2 {
-  width: 50vw;
-  margin: auto;
+  font-size: 2.5rem;
   margin-bottom: 20px;
 }
 
 h3 {
-  font-family: 'Lato', sans-serif;
-  font-size: .8em;
+  font-family: "Lato", sans-serif;
+  font-size: 1em;
 }
 
 .question_container {
-  width: 70vw;
-  height: 60vh;
-  margin: 20vh 15vw 20vh 15vw;
+  width: 80vw;
+  height: 80vh;
+  margin: auto;
+  margin-top: 10vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -39,21 +34,14 @@ h3 {
           justify-content: center;
   -ms-flex-line-pack: center;
       align-content: center;
+  -ms-flex-item-align: center;
+      align-self: center;
   background-color: white;
   text-align: center;
   font-family: "Archivo", sans-serif;
   font-size: 1.5rem;
   border: 5px solid black;
-  padding: 20px;
-}
-
-#button_div {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  padding: 10px;
 }
 
 .hats {
@@ -64,7 +52,7 @@ h3 {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  padding-bottom: 20px;
+  padding-bottom: 40px;
 }
 
 .hats button {
@@ -82,25 +70,37 @@ h3 {
 .hats button:hover {
   -webkit-transition-duration: 0.3s;
           transition-duration: 0.3s;
-  border: 10px solid aquamarine;
+  border: 10px solid #83f4f8;
 }
 
-button {
-  background-color: red;
+.hats button:focus {
+  border: 10px solid #83f4f8;
+}
+
+#button_div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#button_div button {
+  background-color: #83f4f8;
   border: solid 3px black;
   letter-spacing: 1px;
-  color: white;
-  padding: 15px 35px;
+  color: black;
+  padding: 10px 30px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 20px;
   cursor: pointer;
-  width: 200px;
 }
 
-button:hover {
+#button_div button:hover {
   background-color: black;
-  color: red;
+  color: #83f4f8;
 }
 /*# sourceMappingURL=question-6.css.map */
