@@ -1,160 +1,160 @@
 main {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    flex-direction: column;
-    width: 100%;
-    height: 98vh;
-    margin: auto;
-    background-color: white;
-  }
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 98vh;
+  margin: auto;
+  background-color: white;
+}
 
-  .logo {
-    position: absolute;
-    margin: auto;
-    margin-top: -580px;
-    height: 10vh;
-    width: 15vw;
-    background-image: url("./twinder.png");
+.logo {
+  position: absolute;
+  margin: auto;
+  margin-top: -580px;
+  height: 10vh;
+  width: 15vw;
+  background-image: url("./twinder.png");
+  background-size: cover;
+}
+
+.questionContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  height: 60vh;
+  width: 100%;
+  text-align: center;
+}
+
+.rorschach {
+  width: 60%;
+  height: 70%;
+  border: solid 2px #1b1b1b;
+  margin: 2px;
+  background-color: white;
+  box-shadow: 5px 5px 10px #b1b1b1;
+  color: #1b1b1b;
+
+  &--1 {
+    background-image: url("./rorschach-1.jpeg");
     background-size: cover;
-  }
-  
-  .questionContainer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    height: 60vh;
-    width: 100%;
-    text-align: center;
-  }
+    transform: skewX(10deg) skewY(-10deg);
+    background-position-x: -40px;
+    background-repeat: no-repeat;
+    animation: skew 1.5s ease-in-out infinite;
+    animation-direction: alternate-reverse;
 
-  .rorschach {
-      width: 60%;
-      height: 70%;
-      border: solid 2px #1b1b1b;
-      margin: 2px;
-      background-color: white;
-      box-shadow: 5px 5px 10px #b1b1b1;
-      color: #1b1b1b;
-
-      &--1 {
-        background-image: url("./rorschach-1.jpeg");
-        background-size: cover;
+    @keyframes skew {
+      from {
         transform: skewX(10deg) skewY(-10deg);
-        background-position-x: -40px;
-        background-repeat: no-repeat;
-        animation:skew 1.5s ease-in-out infinite;
-        animation-direction: alternate-reverse;
-
-        @keyframes skew {
-            from {
-              transform: skewX(10deg) skewY(-10deg);
-            }
-            to {
-              transform: skewX(-10deg) skewY(10deg);
-            }
-          }
       }
-
-      &--2 {
-        background-image: url("./rorschach-2.jpeg");
-        background-size: cover;
-        transform: skewX(-5.5deg);
-        background-position-x: -55px;
-        background-repeat: no-repeat;
-        animation:skew1 1s ease-in-out infinite;
-        animation-direction: alternate-reverse;
-
-        @keyframes skew1 {
-            from {
-              transform: skewX(-5.5deg) skewY(2deg);
-            }
-            to {
-              transform: skewX(5.5deg) skewY(-10deg);
-            }
-          }
+      to {
+        transform: skewX(-10deg) skewY(10deg);
       }
+    }
+  }
 
-      &--3 {
-        background-image: url("./rorschach-3.jpeg");
-        background-size: cover;
+  &--2 {
+    background-image: url("./rorschach-2.jpeg");
+    background-size: cover;
+    transform: skewX(-5.5deg);
+    background-position-x: -55px;
+    background-repeat: no-repeat;
+    animation: skew1 1s ease-in-out infinite;
+    animation-direction: alternate-reverse;
+
+    @keyframes skew1 {
+      from {
+        transform: skewX(-5.5deg) skewY(2deg);
+      }
+      to {
+        transform: skewX(5.5deg) skewY(-10deg);
+      }
+    }
+  }
+
+  &--3 {
+    background-image: url("./rorschach-3.jpeg");
+    background-size: cover;
+    transform: skewY(-6deg) skewX(4deg);
+    background-position-x: -5px;
+    background-repeat: no-repeat;
+    animation: skew2 1.5s ease-in-out infinite;
+    animation-direction: alternate-reverse;
+
+    @keyframes skew2 {
+      from {
         transform: skewY(-6deg) skewX(4deg);
-        background-position-x: -5px;
-        background-repeat: no-repeat;
-        animation:skew2 1.5s ease-in-out infinite;
-        animation-direction: alternate-reverse;
-
-        @keyframes skew2 {
-            from {
-              transform: skewY(-6deg) skewX(4deg);
-            }
-            to {
-              transform: skewY(6deg) skewX(-4deg);
-            }
-          }
       }
-
-      &--4 {
-        background-image: url("./rorschach-4.jpeg");
-        background-size: cover;
-        transform: skewX(-7deg);
-        background-position-x: -55px;
-        background-repeat: no-repeat;
-        animation:skew3 1.5s ease-in-out infinite;
-        animation-direction: alternate-reverse;
-
-        @keyframes skew3 {
-            from {
-              transform: skewX(-20deg) skewY(10deg);
-            }
-            to {
-              transform: skewX(20deg) skewY(-10deg);
-            }
-          }
+      to {
+        transform: skewY(6deg) skewX(-4deg);
       }
+    }
   }
 
-  .rorschach:hover {
-    border: solid 8px #0ff;
-    cursor: pointer;
-    background-blend-mode: difference;
-    animation: skew4;
-  }
+  &--4 {
+    background-image: url("./rorschach-4.jpeg");
+    background-size: cover;
+    transform: skewX(-7deg);
+    background-position-x: -55px;
+    background-repeat: no-repeat;
+    animation: skew3 1.5s ease-in-out infinite;
+    animation-direction: alternate-reverse;
 
-  h2 {
-    font-family: 'Archivo', sans-serif;
-    font-size: 5em;
-    margin: 0;
-    margin-top: 30px;
+    @keyframes skew3 {
+      from {
+        transform: skewX(-20deg) skewY(10deg);
+      }
+      to {
+        transform: skewX(20deg) skewY(-10deg);
+      }
+    }
   }
+}
 
-  h3 {
-    font-family: 'Lato', sans-serif;
-  }
+.rorschach:hover {
+  border: solid 8px #0ff;
+  cursor: pointer;
+  background-blend-mode: difference;
+  animation: skew4;
+}
 
-  button {
-    background-color: red;
-    border: solid 3px black;
-    letter-spacing: 1px;
-    color: white;
-    padding: 15px 35px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 20px;
-    cursor: pointer;
-  }
-  
-  button:hover {
-    background-color: black;
-    color: red;
-  }
+h2 {
+  font-family: "Archivo", sans-serif;
+  font-size: 5em;
+  margin: 0;
+  margin-top: 30px;
+}
 
-  /*# sourceMappingURL=styles.css.map */
+h3 {
+  font-family: "Lato", sans-serif;
+}
+
+button {
+  background-color: rgb(177, 231, 227);
+  border: solid 3px black;
+  letter-spacing: 1px;
+  color: black;
+  padding: 15px 35px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: black;
+  color: rgb(177, 231, 227);
+}
+
+/*# sourceMappingURL=styles.css.map */
